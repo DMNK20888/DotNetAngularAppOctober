@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CoreService } from '../../core-module/core-service';
 
@@ -6,7 +6,8 @@ import { CoreService } from '../../core-module/core-service';
   selector: 'app-home-component',
   imports: [],
   templateUrl: './home-component.html',
-  styleUrl: './home-component.css'
+  styleUrl: './home-component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent {
 

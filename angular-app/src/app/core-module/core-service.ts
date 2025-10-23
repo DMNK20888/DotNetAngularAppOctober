@@ -8,7 +8,8 @@ export class CoreService {
   
   constructor(private http: HttpClient) { }
 
-  private apiUrl = 'http://localhost:5001';
+  private apiUrl = 'http://localhost:5001/api';
+  // private apiUrlHttps = 'https://localhost:443';
 
   fetchDataTest() {
     return this.http.get(this.apiUrl + '/' + 'test');
